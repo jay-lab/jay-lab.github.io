@@ -29,7 +29,9 @@ def listen_handler(base, options)
     end
   end
 end
-
+task :build do
+  system "env LANG=\"en_US.UTF-8\" bundle exec jekyll serve -l -o --drafts"
+end
 task :preview do
   base = Pathname.new('.').expand_path
   options = {
@@ -74,3 +76,4 @@ task :preview do
 
   Jekyll::Commands::Serve.process(options)
 end
+
