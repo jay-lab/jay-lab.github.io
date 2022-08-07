@@ -286,7 +286,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      read_time: false #default : true > 포스팅 날짜 옆에 "?분 소요시간" 출력
       comments: true
       share: true
       related: true
