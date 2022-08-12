@@ -3,7 +3,7 @@ layout: single
 title: "[파이썬] 문자열 붙이기"
 categories: PYTHON
 # tag: python
-tag: [POYTHON]
+tag: [PYTHON]
 toc: true
 toc_label: "My Table of Contents" # toc 제목
 toc_icon: "cog" # toc 아이콘(톱니바퀴)

@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Python Injection 대응"
-categories: python
+categories: PYTHON
 # tag: python
-tag: [python, Injection]
+tag: [PYTHON, INJECTION]
 toc: true
 author_profile: false
 sidebar:
