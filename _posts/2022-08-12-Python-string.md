@@ -24,3 +24,20 @@ age = 22
 
 print('He is ' + first_name + ' ' + last_name + ', and he is ' + str(age) + ' years old.')
 ```
+
+# % 연산자
+```python
+first_name = 'John'
+last_name = 'Doe'
+age = 22
+
+print(('He is %s %s and is %i years old.') % (first_name, last_name, age))
+```
+- %s: str 타입받기
+- %i: int 타입받기
+- %f: float 타입받기
+
+위 처럼, 여러개의 요소(문자열) 전달이 필요할때 tuple타입으로 순서대로 선언.
+전달할 요소가 하나라면 튜플로 하지않아도 된다.
+
+
