@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[파이썬] 문자열 붙이기"
+title: "[PYTHON] 문자열 붙이기"
 categories: PYTHON
 # tag: python
 tag: [PYTHON]
