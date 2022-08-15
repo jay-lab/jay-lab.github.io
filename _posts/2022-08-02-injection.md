@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[PYTHON] injection 대응"
+title: "[PYTHON] INJECTION 대응"
 categories: PYTHON
 # tag: python
 tag: [PYTHON, INJECTION]
