@@ -11,3 +11,7 @@ _page.scss >
 
 ### 왼쪽 사이드바 마우스를 갖다 대었을 때 원래의 밝은 색상으로 표시하고 마우스가 사이드바 위에 없을 때 다시 흐릿하게하는 기능 제거
 opacity: 0.75; 이 부분 주석처리
+
+### footer 컬러
+_footer.scss > .page__footer > background-color: #044343;
+_footer.scss > .page__footer > color: #ffffff; 
