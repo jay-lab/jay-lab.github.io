@@ -1,4 +1,5 @@
 ---
+
 layout: single
 title: "[PYTHON] ARGPARSE"
 categories: PYTHON
@@ -25,7 +26,7 @@ import argparse
 parser = argparse.ArgumentParser(description='사용법 테스트입니다.')
 
 # 입력받을 인자값 등록
-parser.add_argument("-testArg", dest="testDest", help="date(YYYYMMDD) for daily crawl job")
+parser.add_argument("-testArg", dest="testDest", help="python argparse.py -testArg={입력값} 형태로 입력하세요~")
 # 입력받은 인자값을 args에 저장 (type: namespace)
 args = parser.parse_args()
 
@@ -33,6 +34,27 @@ if args.testDest:
     print("결과값: ", args.testDest)
 ```
 
-`» python argparseTest.py -testArg=123
+결과값 :
+
+```shell
+» python argparseTest.py --help
+usage: argparseTest.py [-h] [-testArg TESTDEST]
+
+사용법 테스트입니다.
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -testArg TESTDEST  python argparse.py -testArg={입력값} 형태로 입력하세요~
+```
+
+```shell
+» python argparseTest.py -testArg=123
 결과값:  123`
+```
+
+
+
+
+
+
 
