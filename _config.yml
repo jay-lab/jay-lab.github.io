@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 locale                   : "ko-KR"
 title                    : "JayLab"
 title_separator          : "|"
-subtitle                 : "small positive action" # site tagline that appears below site title in masthead
+subtitle                 : "Action creates opportunity" # site tagline that appears below site title in masthead
 name                     : "jay-lab"
 description              : "제이랩의 블로그 입니다."
 url                      : "https://jay-lab.github.io"
