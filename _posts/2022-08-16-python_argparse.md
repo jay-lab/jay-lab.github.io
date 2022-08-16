@@ -17,7 +17,7 @@ sidebar:
 
 
 
-유용한 argparse에 대하여 간단한 예제
+**유용한 argparse에 대하여 간단한 예제**
 
 ```python
 import argparse
@@ -34,7 +34,7 @@ if args.testDest:
     print("결과값: ", args.testDest)
 ```
 
-결과값 :
+**결과값 :**
 
 ```shell
 » python argparseTest.py --help
