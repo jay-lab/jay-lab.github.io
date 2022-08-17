@@ -15,3 +15,47 @@ opacity: 0.75; 이 부분 주석처리
 ### footer 컬러
 _footer.scss > .page__footer > background-color: #044343;
 _footer.scss > .page__footer > color: #ffffff; 
+
+## 포스트 제목 컬러 - 1
+```css
+a {
+  &:focus {
+    @extend %tab-focus;
+  }
+
+  // &:visited {
+  //   color: $link-color-visited;
+  // }
+
+  &:hover {
+    color: #2f9558; //rgb(35, 173, 227); // $link-color-hover;
+    outline: 1;
+  }
+}
+
+.archive__item_hover {
+  box-shadow: inset 0 0 0 0 #008585;
+  color: #008585;
+  // margin: 0 -.25rem;
+  // padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  &:focus {
+    @extend %tab-focus;
+  }
+
+  // &:visited {
+  //   color: $link-color-visited;
+  // }
+
+  &:hover {
+    box-shadow: inset 400px 0 0 0 #008585;
+    color: white;
+  }
+}
+```
+
+## 포스트 제목 컬러 - 2
+_includes/archive-single.html > 
+```html
+<a class="archive__item_hover"
+```
