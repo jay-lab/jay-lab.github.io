@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "JayLab"
 title_separator          : "|"
 subtitle                 : "Action creates opportunity" # site tagline that appears below site title in masthead
@@ -139,7 +139,7 @@ footer:
     #   icon: "fab fa-fw fa-facebook-square"
     #   # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-fw fa-github fa-github2"
       url: "https://github.com/jay-lab"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"

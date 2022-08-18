@@ -12,6 +12,12 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      .masthead {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/assets/images/header_backgrount_image.png');
+        background-size: 100%;
+      }
+    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

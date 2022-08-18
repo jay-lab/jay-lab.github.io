@@ -59,3 +59,49 @@ _includes/archive-single.html >
 ```html
 <a class="archive__item_hover"
 ```
+
+## footer github 아이콘 주황색으로 변경
+_config.yml > footer > icon > fa-github2 추가
+
+_sass/minimal-mistakes/_utilities.scss > .fa-github 클래스css 밑에 아래 추가
+.fa-github2 {
+  color : #fb9c3b;
+}
+
+## header 백그라운드 이미지 적용
+_layouts/default.html > 
+<style>
+  .masthead {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/assets/images/header_background_img.jpg');
+    background-size: 100%;
+  }
+</style>
+
+## header 텍스트 색상 변경
+_sass/minimal-mistakes/_masthead.scss > 
+.greedy-nav > a태그 color 적용 #ffffff
+
+## blog title & sub title CSS 라인업 효과
+```css
+/* lineup class and keyframes */
+.lineUp {
+  animation: 1.8s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+```

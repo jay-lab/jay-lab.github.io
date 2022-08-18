@@ -58,6 +58,28 @@
   font-size: $type-size-8;
 }
 
+/* lineup class and keyframes */
+.lineUp {
+  animation: 1.8s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 .masthead__menu {
   float: left;
   margin-left: 0;
