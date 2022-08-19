@@ -13,8 +13,8 @@ _page.scss >
 opacity: 0.75; 이 부분 주석처리
 
 ### footer 컬러
-_footer.scss > .page__footer > background-color: #044343;
-_footer.scss > .page__footer > color: #ffffff; 
+_footer.scss > .page__footer > background-color: #044343; 이 부분을 아래로 수정
+_footer.scss > .page__footer > background: linear-gradient(312deg, #000000 90%, #404b42 90%);
 
 ## 포스트 제목 컬러 - 1
 ```css
@@ -79,7 +79,7 @@ _layouts/default.html >
 
 ## header 텍스트 색상 변경
 _sass/minimal-mistakes/_masthead.scss > 
-.greedy-nav > a태그 color 적용 #ffffff
+.greedy-nav > a태그 color 적용 #ffffff 및 text-shadow: 2px 2px 2px black;
 
 ## blog title & sub title CSS 라인업 효과
 ```css

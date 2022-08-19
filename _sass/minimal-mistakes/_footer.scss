@@ -14,7 +14,7 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: #2d3c2b; // $footer-background-color;
+  background: linear-gradient(312deg, #000000 90%, #404b42 90%); // background-color: $footer-background-color;
 
   footer {
     @include clearfix;
