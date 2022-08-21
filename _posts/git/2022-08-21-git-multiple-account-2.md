@@ -18,11 +18,9 @@ sidebar:
 
 **개요**
 
-1. **내 로컬에 여러 git 계정 등록**
+1. **[내 로컬에 여러 git 계정 등록](http://localhost:4000/git/git-multiple-account/)**
 
 2. **<u>git 사용시 사용할 계정 자동 분류</u> ←**
-
-<br>
 
 이번 글에서는 두번째, **git 사용시 사용할 계정 자동 분류**하는 방법을 다룬다.
 
@@ -95,13 +93,24 @@ git init
 
 # 새로운 계정을 활용한 remote 설정
 git remote add origin git@{~/.ssh/config 파일에 등록했던 회사전용 git계정의 host명}:{git 유저명}/{repository 명}.git
+
+
++ 혹은
+
+
+# 기존의 git 계정정보 연결 해제 및 새로운계정 연동을 위한 git설정 초기화
+git init
+
+# 기존의 원격 연결정보 변경. 새로운 계정을 활용한 remote 설정
+git remote set-url origin git@{~/.ssh/config 파일에 등록했던 회사전용 git계정의 host명}:{git 유저명}/{repository 명}.git
+
 ```
 
 github 레파지토리 페이지에서 > [Code] > [SSH]를 보면, 레파지토리의 ssh형식 주소가 기본적으로 이와 같이 되어있다. `git@github.com:{유저명}/{repository 명}.git`  
 
 ![image-20220821155118573](../../images/2022-08-21-git-multiple-account-2/image-20220821155118573.png)
 
-여기서 도메인 부분 `github.com`을 로컬에 git 계정 다중 등록 - 1 편에서 다루었던  `~/.ssh/config`에 설정했던 회사 git 계정 Host명으로 치환한 ssh주소로 remote 연결을 하고나면 해당 작업공간에서는 완벽하게 회사 git계정정보를 가지고 동작하게된다.
+여기서 도메인 부분 `github.com`을 로컬에 [git 계정 다중 등록 - 1](https://jay-lab.github.io/git/git-multiple-account/) 편에서 다루었던  `~/.ssh/config`에 설정했던 **회사 git 계정에 대한 Host명**으로 치환한 ssh주소로 remote 연결을 하고나면 해당 작업공간에서는 완벽하게 회사 git계정정보를 가지고 동작하게된다.
 
 <br>
 
