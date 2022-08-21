@@ -106,6 +106,12 @@ vi {키 이름}.pub
 ssh -T git@{ssh 연결 대표이름}
 ```
 
+연결 확인 결과
+
+![image-20220821165944307](../../images/2022-08-19-git-multiple-account/image-20220821165944307.png)
+
+"but GitHub does not provide shell access" 는 무시해도된다.
+
 <br>
 
 **위 과정을 등록하고자 하는 각 git 계정 수만큼 반복**
