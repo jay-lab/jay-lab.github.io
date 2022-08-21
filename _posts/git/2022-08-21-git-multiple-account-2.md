@@ -34,6 +34,8 @@ sidebar:
 
 ## 1. 전역적으로 설정된 git 계정 확인
 
+작업 공간에 따라 활용할 git 계정을 분류하는 작업에 앞서, 현재 '전역적으로' 설정된 계정 확인.
+
 ```shell
 vi ~/.gitconfig
 ```
@@ -44,9 +46,20 @@ vi ~/.gitconfig
 	email = {git사용계정 이메일1}
 ```
 
-위 처럼, config파일에 설정된 계정은 **어느 디렉토리에서든** git 사용시 활용되는 계정정보. 
+위 처럼, .gitconfig파일에 설정된 계정은 **어느 디렉토리에서든** git 사용시 활용되는 계정정보. 
 
 ※ gitconfig 파일이 어느경로에 있는지 모를 때 : `git config --list --show-origin`
+
+.gitconfig파일에 위와 같이 [user] 항목이 없다면 한번도 git login설정이 된 적 없다는 뜻
+
+**※ git 계정정보 전역적 설정방법**
+
+```shell
+git config --global user.name {github 로그인유저명}
+git config --global user.email {github 로그인이메일}
+```
+
+
 
 <br>
 
@@ -110,7 +123,15 @@ github 레파지토리 페이지에서 > [Code] > [SSH]를 보면, 레파지토�
 
 ![image-20220821155118573](../../images/2022-08-21-git-multiple-account-2/image-20220821155118573.png)
 
-여기서 도메인 부분 `github.com`을 로컬에 [git 계정 다중 등록 - 1](https://jay-lab.github.io/git/git-multiple-account/) 편에서 다루었던  `~/.ssh/config`에 설정했던 **회사 git 계정에 대한 Host명**으로 치환한 ssh주소로 remote 연결을 하고나면 해당 작업공간에서는 완벽하게 회사 git계정정보를 가지고 동작하게된다.
+여기서 도메인 부분 `github.com`을 [git 계정 다중 등록 - 1](https://jay-lab.github.io/git/git-multiple-account/) 편에서 { `~/.ssh/config`에 설정했던 **회사 git 계정에 대한 Host명**}으로 치환.
+
+```shell
+git@github.com:{git 유저명}/{repository 명}.git
+↓
+git@{회사 git계정 host명}:{git 유저명}/{repository 명}.git
+```
+
+치환된 ssh주소로 remote 연결을 하고나면 해당 작업공간에서는 완벽하게 회사 git계정정보를 가지고 동작하게된다.
 
 <br>
 
