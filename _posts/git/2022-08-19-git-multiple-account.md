@@ -21,7 +21,7 @@ sidebar:
 
 1. **<u>내 로컬에 여러 git 계정 등록</u> ←**
 
-2. **[git 사용시 사용할 계정 자동 분류](http://localhost:4000/git/git-multiple-account-2/)**
+2. **[git 사용시 사용할 계정 자동 분류](../git-multiple-account-2/)**
 
 이번 글에서는 첫번째, **내 로컬에 여러 git 계정 등록**하는 방법을 다룬다.
 

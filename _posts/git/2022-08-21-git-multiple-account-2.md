@@ -18,7 +18,7 @@ sidebar:
 
 **개요**
 
-1. **[내 로컬에 여러 git 계정 등록](http://localhost:4000/git/git-multiple-account/)**
+1. **[내 로컬에 여러 git 계정 등록](../git-multiple-account/)**
 
 2. **<u>git 사용시 사용할 계정 자동 분류</u> ←**
 
