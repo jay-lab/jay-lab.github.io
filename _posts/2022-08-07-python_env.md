@@ -66,7 +66,7 @@ source myenv/bin/activate
 
 ![image-20220807212929744](/images/2022-08-07-1/image-20220807212929744.png)
 
-
+test
 
 ### 파이썬 패키지 설치
 
