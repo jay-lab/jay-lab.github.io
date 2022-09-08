@@ -141,11 +141,11 @@ a {
 }
 
 .archive__item_hover {
-  box-shadow: inset 0 0 0 0 #008585;
-  color: #008585;
+  box-shadow: inset 0 0 0 0 #5b7c5d;
+  color: #5f7961;
   // margin: 0 -.25rem;
   // padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
   &:focus {
     @extend %tab-focus;
   }
@@ -155,7 +155,7 @@ a {
   // }
 
   &:hover {
-    box-shadow: inset 400px 0 0 0 #008585;
+    box-shadow: inset 400px 0 0 0 #5b7c5d;
     color: white;
   }
 }
