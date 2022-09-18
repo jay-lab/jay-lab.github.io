@@ -1,13 +1,12 @@
 ---
 layout: single
 title: "스프링과 장고에 대한 생각 정리"
-categories: AWS
-tag: [CodeDeploy]
+categories: [PYTHON]
+tag: [SPRING, DJANGO]
 toc: true
 toc_label: "Contents" # toc 제목
 toc_icon: "cog" # toc 아이콘(톱니바퀴)
 author_profile: false
-classes: wide
 sidebar:
     nav: "docs"
 ---
@@ -44,22 +43,22 @@ sidebar:
 
    JIT 컴파일 방식은 인터프리트 방식과 정적컴파일 방식을 적절하게 혼합한 방식이다. 실행 시점에 기계어코드를 생성(전통적인 인터프리트 방식)하면서 그 코드를 캐싱하여 같은 함수가 여러 번 불릴 때, 해당 캐시를 활용함으로써 정적컴파일 방식의 이점을 얻을 수 있다.
    기존의 파이썬 인터프리터는 정확하게는 C언어로 구현되어 CPython이라고 하는데, PyPy는 JIT컴파일 방식을 제공하는, 파이썬(RPython)으로 만들어진 파이썬 인터프리터다. 실행 내용마다 차이가 있겠지만 한 블로거의 실험내용에서 C언어의 경우 0.4초, python의 경우 15초 걸리던 것이 pypy로 0.8초까지 단축된 결과를 보았다. 아직까지는 특정 프로그램에서 이러한 효과가 반감되거나 아예없는 한계가 있다는 단점이 있지만, 이 또한 지금도 계속해서 업데이트 되는 중이라는 점은 파이썬 + Django 조합을 낙관적으로 바라볼만 한 요소로 다가왔다.  
-   [출처 1]<https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=lsm_origin&logNo=120210926900>
-
-   [출처 2]<https://speed.pypy.org/>
-
-   [출처 3]<https://lincolnloop.com/blog/faster-django-sites-pypy/>
-
-   [출처 4]<https://seolin.tistory.com/119>
-
+   
+   > [출처 1]<https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=lsm_origin&logNo=120210926900>
+   >
+   > [출처 2]<https://speed.pypy.org/>
+   >
+   > [출처 3]<https://lincolnloop.com/blog/faster-django-sites-pypy/>
+   >
+   > [출처 4]<https://seolin.tistory.com/119>
+   
    
 
 ## 나의 이상
 
 사실 여기까지만 보면 Spring Boot도 개발속도, 실행 속도 딱히 빠짐이 없는데 그럼에도 불구하고 장고의 낙관적인 면만 나열하였다. "여기저기 겨우겨우 장점 영끌해서 겨우 스프링 부트랑 같거나 그 이하"인 것 같지만, 오히려 반대로 개발속도와 실행속도가 큰차이가 나지 않는다면, AWS와의 조합을 고려하면 파이썬을 빼놓을 수 없고 파이썬의 막강한 확장성을 감안한다면 장고를 깊게 알아가보는것도 좋은 선택이라고 생각한다. 많은 회사에서 스프링을 사용하고있는 만큼 추후 스프링도 본격적으로 해볼 생각이지만 일단은 장고로 가벼운 웹과 api를 구현할 수 있는 수준까지는 끌어올려 보려한다.
 
-> 파이썬은 AWS, Google Cloud, Azure등에서 전폭적으로 초기 단계부터 지원한 프레임워크다.
->
-> 출처 : https://elky.tistory.com/652
+> "파이썬은 AWS, Google Cloud, Azure등에서 전폭적으로 초기 단계부터 지원한 프레임워크"
+>출처 : <https://elky.tistory.com/652>
 
    
