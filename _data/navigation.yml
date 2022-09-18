@@ -18,13 +18,21 @@ main:
     url: /search/
 
 docs:
-  - title: "대목차1"
+  - title: "Category"
     children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
-  - title: "대목차2"
+      - title: "Javascript"
+        url: /categories/#javascript
+      - title: "Python"
+        url: /categories/#python
+      - title: "MongoDB"
+        url: /categories/#mongodb
+      - title: "AWS"
+        url: /categories/#aws
+      - title: "Git"
+        url: /categories/#git
+      - title: "Algorithm"
+        url: /categories/#algorithm
+  - title: "Main Category"
     children:
       - title: "Category"
         url: /categories/
