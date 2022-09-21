@@ -14,11 +14,11 @@ sidebar:
 
 
 
-# Django 기본
+# - Django -
 
-urls.py
+## Django 기본
 
-virew.py파일
+virew.py파일 예제
 
 ```python
 from rest_framework.views import APIView
@@ -44,4 +44,6 @@ class Main(APIView):
 	<img src="{{feed.img_path}}"/></img>
 {% endfor %}
 ```
+
+
 
