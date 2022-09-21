@@ -14,9 +14,9 @@ sidebar:
 
 
 
-# - Django -
+# # Django
 
-## Django 기본
+## Django 기초 정리
 
 virew.py파일 예제
 
@@ -41,7 +41,7 @@ class Main(APIView):
 	<p>{{feed.content}}</p>
 	<p>{{feed.user_id}}</p>
 	<p>{{feed.like_count}}</p>
-	<img src="{{feed.img_path}}"/></img>
+	<img src="{{feed.img_path}}"></img>
 {% endfor %}
 ```
 

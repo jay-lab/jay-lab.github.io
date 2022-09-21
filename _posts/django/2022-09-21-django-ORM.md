@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Django 기초"
+title: "Django ORM $ QuerySet"
 categories: [DJANGO]
-tag: [DJANGO]
+tag: [ORM, QuerySet]
 toc: true
 toc_label: "Contents" # toc 제목
 toc_icon: "cog" # toc 아이콘(톱니바퀴)
