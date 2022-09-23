@@ -35,7 +35,7 @@ class Main(APIView):
 
 - HTML에서는 feeds라는 dict 사용 가능
 
-```html
+```python
 /* 예시 */
 {% for feed in feeds %}
 	<p>{{feed.content}}</p>
