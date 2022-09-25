@@ -51,6 +51,8 @@ class Main(APIView):
 
 변수 기본 출력 방법 : **{\{변수명\}}**
 
+뷰에서 탬플릿으로 context전달이 가능
+
 ### 템플릿 필터
 
 - 필터는 파이프(\|)를 통해 사용가능
@@ -89,3 +91,23 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 더하기 필터, value 변수값이 4이면, 결과는 6
 \* 정수가 아닌 경우, 더하기를 시도하고, 실패하면 빈 문자열 반환
 
+
+
+### 템플릿 태그 - \{% %\}
+
+```django
+\{% for i in value %\}
+    <div>번호 : \{\{forloop.counter\}\} 번째 data</div>
+    <div>제목 : \{\{i.title\}\}</div>
+    <div>추천수 : \{\{i.likeCount\}\}</div>
+    <div>조회수 : \{\{i.viewCount\}\}</div>
+    <div>내용 : \{\{i.contents\}\}</div>
+\{% endfor %\}
+```
+
+#### 반복문 카운트
+
+- \{\{forloop.counter\}\}는 반복문안에서 사용하면 반복 횟수만큼 count(1부터 시작)
+- \{\{forloop.counter0\}\} : 0부터 반복횟수만큼 count
+- \{\{forloop.revcounter\}\} : 전체 길이로 시작해서 1까지 count
+- \{\{forloop.revcounter0\}\} : 전체 길이로 시작해서 0까지 count
