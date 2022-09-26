@@ -118,3 +118,35 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 - \{\{forloop.counter0\}\} : 0부터 반복횟수만큼 count
 - \{\{forloop.revcounter\}\} : 전체 길이로 시작해서 1까지 count
 - \{\{forloop.revcounter0\}\} : 전체 길이로 시작해서 0까지 count
+
+
+
+#### autoescape 기능 끄기
+
+장고의 템플릿 문법에는 기본적으로 escape기능이 활성화 되어있다. 그래서 변수를 통해 html을 표시하려고 할 때 HTML로 표시되지 않고 단순 텍스트로 표시된다.  
+이러한 auto escape기능을 끄기 위한 템플릿 문법 ▼
+
+```django
+{% raw %}<tr>
+  <th>기타</th>
+  <td>
+      {% autoescape off %}
+      	{{ HTML태그가들어있는변수 }}
+      {% endautoescape %}
+  </td>
+</tr>{% endraw %}
+```
+
+
+
+#### comment(주석)
+
+```django
+{% raw %}{% comment %}
+<?>불필요한 블럭..<?>
+{% endcomment %}{% endraw %}
+
+//한 라인에 comment를 적용하는 방법은
+{% raw %}{# 주석처리할 내용 #}{% endraw %}
+```
+
