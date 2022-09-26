@@ -9,7 +9,6 @@ toc_icon: "cog" # toc 아이콘(톱니바퀴)
 author_profile: false
 sidebar:
     nav: "docs"
-
 ---
 
 
@@ -38,11 +37,11 @@ class Main(APIView):
 ```html
 /* 예시 */
 {% raw %}{% for feed in feeds %}
-	<p>{ {feed.content}}</p>
-	<p>{ {feed.user_id}}</p>
-	<p>{ {feed.like_count}}</p>
+	<p>{{feed.content}}</p>
+	<p>{{feed.user_id}}</p>
+	<p>{{feed.like_count}}</p>
 	<img src="{ {feed.img_path}}"></img>
-{% endfor %}{% endfor %}
+{% endfor %}{% endraw %}
 ```
 
 
@@ -99,7 +98,7 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 
 
 
-### 템플릿 태그 - {% raw %} {% %} {% endraw %}
+### 템플릿 태그 - {% raw %}{% %}{% endraw %}
 
 ```html
 {% raw %}{% for i in value %} 
