@@ -37,15 +37,21 @@ class Main(APIView):
 
 ```html
 /* 예시 */
-{ % for feed in feeds %}
+{% raw %}{% for feed in feeds %}
 	<p>{ {feed.content}}</p>
 	<p>{ {feed.user_id}}</p>
 	<p>{ {feed.like_count}}</p>
 	<img src="{ {feed.img_path}}"></img>
-{ % endfor %}
+{% endfor %}{% endfor %}
 ```
 
 
+
+> ! git blog - jekky theme에서 Django 템플릿 문법을 사용하는경우 Ruby기반의 템플릿 언어 'Liquid'와 문법이 같기 때문에 escape(```) 처리로 인식된다.
+>
+> 이를 방지하기 위해서는 문장의 앞뒤를 다음과 같이 처리해야한다.
+>
+> ![image-20220926095526319](../../images/2022-09-19-django-step1/image-20220926095526319.png)
 
 ## Django 템플릿 문법
 
@@ -93,16 +99,16 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 
 
 
-### 템플릿 태그 - \{% %\}
+### 템플릿 태그 - {% raw %} {% %} {% endraw %}
 
-```django
-\{% for i in value %\}
-    <div>번호 : \{\{forloop.counter\}\} 번째 data</div>
-    <div>제목 : \{\{i.title\}\}</div>
-    <div>추천수 : \{\{i.likeCount\}\}</div>
-    <div>조회수 : \{\{i.viewCount\}\}</div>
-    <div>내용 : \{\{i.contents\}\}</div>
-\{% endfor %\}
+```html
+{% raw %}{% for i in value %} 
+    <div>번호 : {{forloop.counter}} 번째 data</div>
+    <div>제목 : {{i.title}}</div>
+    <div>추천수 : {{i.likeCount}}</div>
+    <div>조회수 : {{i.viewCount}}</div>
+    <div>내용 : {{i.contents}}</div>
+{% endfor %}{% endraw %}
 ```
 
 #### 반복문 카운트
