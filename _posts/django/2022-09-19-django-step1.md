@@ -62,6 +62,8 @@ class Main(APIView):
 
 - 필터는 파이프(\|)를 통해 사용가능
 - 약 60여 가지 필터 제공
+- 필터는 커스텀 가능<https://django-doc-test-kor.readthedocs.io/en/old_master/howto/custom-template-tags.html>
+- [필터에 대한 내용은 공식문서 참고](https://django-doc-test-kor.readthedocs.io/en/old_master/ref/templates/builtins.html#ref-templates-builtins-filters)
 
 **\{\{ name\|lower\}\}**  
 name 변수값의 문자를 소문자로 변경
@@ -73,9 +75,9 @@ name 변수값의 문자를 소문자로 변경
 **\{\{ bio|truncatewords:30 \}\}**  
 (인자있는 필터) bio 변수값 중 앞에서 30개 단어만 보여주고, 줄바꿈 문자는 모두 없애줌
 
-**\{\{ list\|join:" // " \}\}**   
+**\{\{ list\|join:"+" \}\}**   
 list 변수값에 join 적용, 필터 인자의 빈칸은 따옴표로 묶어줌  
-list가 ['a', 'b', 'c']인 경우, "a // b // c"
+list가 ['a', 'b', 'c']인 경우, "a+b+c"
 
 **\{\{ value\|default:"nothing" \}\}**  
 value 변수값이 False이거나 없는 경우, "nothing"으로 보여줌
