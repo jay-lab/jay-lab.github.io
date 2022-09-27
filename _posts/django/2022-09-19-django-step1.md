@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Django 기초"
+title: "Django Basic & Template Syntax"
 categories: [DJANGO]
-tag: [DJANGO]
+tag: [DJANGO, Template Syntax]
 toc: true
 toc_label: "Contents" # toc 제목
 toc_icon: "cog" # toc 아이콘(톱니바퀴)
@@ -13,11 +13,11 @@ sidebar:
 
 
 
-# # Django
+# Django
 
-## Django 기초 정리
+## Django Basic
 
-virew.py파일 예제
+view.py file sample
 
 ```python
 from rest_framework.views import APIView
@@ -46,24 +46,26 @@ class Main(APIView):
 
 
 
-> ! git blog - jekky theme에서 Django 템플릿 문법을 사용하는경우 Ruby기반의 템플릿 언어 'Liquid'와 문법이 같기 때문에 escape(```) 처리로 인식된다.
+> git blog - jekky theme에서 Django 템플릿 문법을 사용하는경우 Ruby기반의 템플릿 언어 'Liquid'와 문법이 같기 때문에 escape(```) 처리로 인식되는 현상 발생.
 >
-> 이를 방지하기 위해서는 문장의 앞뒤를 다음과 같이 처리해야한다.
+> 이를 방지하기 위해, 문장의 앞뒤에 다음과 같은 처리 필요
 >
 > ![image-20220926095526319](../../images/2022-09-19-django-step1/image-20220926095526319.png)
 
-## Django 템플릿 문법
+## Django Template Syntax
+
+
 
 변수 기본 출력 방법 : **{\{변수명\}}**
 
-뷰에서 탬플릿으로 context전달이 가능
+뷰에서 탬플릿으로 context전달 가능
 
-### 템플릿 필터
+### Template Filter
 
 - 필터는 파이프(\|)를 통해 사용가능
 - 약 60여 가지 필터 제공
-- 필터는 커스텀 가능<https://django-doc-test-kor.readthedocs.io/en/old_master/howto/custom-template-tags.html>
-- [필터에 대한 내용은 공식문서 참고](https://django-doc-test-kor.readthedocs.io/en/old_master/ref/templates/builtins.html#ref-templates-builtins-filters)
+- 커스텀도 가능<https://django-doc-test-kor.readthedocs.io/en/old_master/howto/custom-template-tags.html>
+- 필터에 대한 내용 : [공식문서](https://django-doc-test-kor.readthedocs.io/en/old_master/ref/templates/builtins.html#ref-templates-builtins-filters) 참고
 
 **\{\{ name\|lower\}\}**  
 name 변수값의 문자를 소문자로 변경
@@ -100,7 +102,7 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 
 
 
-### 템플릿 태그 - {% raw %}{% %}{% endraw %}
+### Template Tag - {% raw %}{% %}{% endraw %}
 
 ```html
 {% raw %}{% for i in value %} 
@@ -112,7 +114,7 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 {% endfor %}{% endraw %}
 ```
 
-#### 반복문 카운트
+#### Loop Count
 
 - \{\{forloop.counter\}\}는 반복문안에서 사용하면 반복 횟수만큼 count(1부터 시작)
 - \{\{forloop.counter0\}\} : 0부터 반복횟수만큼 count
@@ -121,7 +123,7 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 
 
 
-#### autoescape 기능 끄기
+#### Autoescape Off
 
 장고의 템플릿 문법에는 기본적으로 escape기능이 활성화 되어있다. 그래서 변수를 통해 html을 표시하려고 할 때 HTML로 표시되지 않고 단순 텍스트로 표시된다.  
 이러한 auto escape기능을 끄기 위한 템플릿 문법 ▼
@@ -139,7 +141,7 @@ value 변수값의 길이 반환(스트링이거나 리스트인 경우도 가�
 
 
 
-#### comment(주석)
+#### Comment
 
 ```django
 {% raw %}{% comment %}
