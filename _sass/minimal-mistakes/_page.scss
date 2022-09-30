@@ -89,7 +89,7 @@ body {
 
 .page__content {
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
     border-bottom: 1px solid $border-color;
   }
 
@@ -110,7 +110,7 @@ body {
 		}
 	}
 
-  p,
+  // p,
   li,
   dl {
     font-size: 1em;
@@ -118,6 +118,8 @@ body {
 
   /* paragraph indents */
   p {
+    font-size: 0.9em;
+
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/

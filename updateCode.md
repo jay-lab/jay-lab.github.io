@@ -105,3 +105,39 @@ _sass/minimal-mistakes/_masthead.scss >
   }
 }
 ```
+# h1, h2 text size change - _variables.scss
+// $h-size-1: 1.563em !default; // ~25.008px
+$h-size-1: 1.8em !default; // ~25.008px
+// $h-size-2: 1.25em !default; // ~20px
+$h-size-2: 1.6em !default; // ~20px
+
+# h2 border color change - _variables.scss
+$border-color: #d9d9d9 !default;
+
+# page text size change
+(_page.scss) 113line
+
+  p,
+  li,
+  dl {
+    font-size: 1em;
+  }
+
+  여기서 p태그 부분 주석 처리 후
+  120 line에
+  p {
+    font-size: 0.9em;
+
+    margin: 0 0 $indent-var;
+
+    /* sibling indentation*/
+    @if $paragraph-indent == true {
+      & + p {
+        text-indent: $indent-var;
+        margin-top: -($indent-var);
+      }
+    }
+  }
+
+  이렇게 기존의 p태그 안에 font-size:0.9em; 한줄 추가.
+  이렇게 해야 오른쪽 content 목차 안의 텍스트 크기는 건드리지 않고 page 내 텍스트ㄱ크기만 조절 가능
