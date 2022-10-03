@@ -140,4 +140,23 @@ $border-color: #d9d9d9 !default;
   }
 
   이렇게 기존의 p태그 안에 font-size:0.9em; 한줄 추가.
-  이렇게 해야 오른쪽 content 목차 안의 텍스트 크기는 건드리지 않고 page 내 텍스트ㄱ크기만 조절 가능
+  이렇게 해야 오른쪽 content 목차 안의 텍스트 크기는 건드리지 않고 page 내 텍스트크기만 조절 가능
+
+  # ul > li text size 1rm-> 0.9rm apply (_page.scss 113line)
+old↓
+  // p,
+  li,
+  dl {
+    font-size: 1em;
+  }
+new↓
+  li {
+    font-size: 0.9em;
+  }
+
+  // p,
+  .toc li,
+  .toc dl {
+    font-size: 1em;
+  }
+  이렇게하지 toc 클래스를 별도로 구분 지어주지 않으면 toc 내 텍스트 사이즈까지 영향이 가는데 그 비율이 정상적인 li 크기변경보다 급격하게 작아짐

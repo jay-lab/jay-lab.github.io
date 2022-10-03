@@ -110,11 +110,16 @@ body {
 		}
 	}
 
+  li {
+    font-size: 0.9em;
+  }
+
   // p,
-  li,
-  dl {
+  .toc li,
+  .toc dl {
     font-size: 1em;
   }
+
 
   /* paragraph indents */
   p {
