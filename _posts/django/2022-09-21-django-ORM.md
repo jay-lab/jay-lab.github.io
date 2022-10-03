@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Django ORM & QuerySet"
+title: "[Django] ORM & QuerySet"
 categories: [DJANGO]
 tag: [ORM, QuerySet]
 toc: true

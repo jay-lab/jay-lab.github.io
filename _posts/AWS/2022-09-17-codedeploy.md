@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CodeDeploy 사용기"
+title: "[AWS] CodeDeploy 사용기"
 categories: AWS
 tag: [CodeDeploy]
 toc: true

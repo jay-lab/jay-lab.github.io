@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Django Basic & Template Syntax"
+title: "[Django] Basic & Template Syntax"
 categories: [DJANGO]
 tag: [DJANGO, Template Syntax]
 toc: true
@@ -12,6 +12,12 @@ sidebar:
 ---
 
 
+
+**Django** 
+<br> → 장고 기초(view 작성 예시, HTML Template Syntax)
+{: .notice--info}
+
+<br>
 
 # Django
 

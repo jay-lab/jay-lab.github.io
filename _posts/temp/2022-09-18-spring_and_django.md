@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "스프링과 장고에 대한 생각 정리"
+title: "프레임워크 선택. 스프링과 장고에 대한 생각"
 categories: [PYTHON]
 tag: [SPRING, DJANGO]
 toc: true
@@ -12,6 +12,12 @@ sidebar:
 ---
 
 
+
+**Framework 선택**.
+<br>Spring과 Django에 대하여
+{: .notice--info}
+
+<br>
 
 # Spring과 Django를 놓고 
 
