@@ -299,4 +299,4 @@ defaults:
       #     - label: "More Info"
       #       url: "https://unsplash.com"
 date_format: "%Y-%m-%d"
-
+asset_url: /assets/images
