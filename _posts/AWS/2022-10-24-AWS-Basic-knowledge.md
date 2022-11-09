@@ -24,6 +24,8 @@ sidebar:
 
 # AWS 사용 전 네트워크 기초 지식 정리
 
+**VPC : Virtual Private Cloud**
+
 ## VPC 구성 - 라우팅 테이블
 
 AWS에 어느 리전을 사용하더라도 기본적으로 미리 생성되어있는 Default VPC의 대역 :
@@ -91,3 +93,9 @@ AWS 서비스는 크게 3가지.
 **ARN :**
 
 Amazon Resource Name : AWS의 모든 리소스의 고유 아이디
+
+
+
+**VPC의 구성요소**
+
+![youtu.be-FeYagEibtPE](../../images/2022-10-24-AWS-Basic-knowledge/youtu.be-FeYagEibtPE.jpg)

@@ -189,3 +189,6 @@ if test is '': query = query.replace('%(str_test)s', 'null')
 
 cursor.execute(query, query_paramDict)
 ```
+
+※ 쿼리문 기준으로 확인해보면 `select * from testTable where key = null` 이다.
+`~ ~ where key = 'null'`이 아닌 점 **주의**
