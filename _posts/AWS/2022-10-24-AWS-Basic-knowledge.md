@@ -28,6 +28,8 @@ sidebar:
 
 ## VPC 구성 - 라우팅 테이블
 
+![youtu.be-FeYagEibtPE (1)](../../images/2022-10-24-AWS-Basic-knowledge/youtu.be-FeYagEibtPE%20(1).jpg)
+
 AWS에 어느 리전을 사용하더라도 기본적으로 미리 생성되어있는 Default VPC의 대역 :
 → **172.31.0.0/16**
 
