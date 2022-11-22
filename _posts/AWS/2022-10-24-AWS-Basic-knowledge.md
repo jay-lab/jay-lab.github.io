@@ -111,3 +111,9 @@ Amazon Resource Name : AWS의 모든 리소스의 고유 아이디
 - 재해 복구(disaster recover) : 장애 상황에서 정상 서비스를 제공할 수 있도록 복구 하는 것
 - 확장성(Scalability) : 쉽고 빠르게 규모를 늘릴 수 있는 능력
 - 탄력성(Elasticity) : 수요에 따라 컴퓨팅 파워/용량을 확장하거나 축소할 수 있는 능력
+
+
+
+**RDS Failover 테스트할때 사용한 터미널 명령 :**  
+`while true; do host {RDS 엔드포인트} | grep alias ; sleep 1; done`  
+(접속한 RDS EC2에서 현재 바라보고있는 RDS 대상이 Master에서 stanby로 바뀌는것을 확인할때 사용)
