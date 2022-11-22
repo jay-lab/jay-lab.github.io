@@ -101,3 +101,13 @@ Amazon Resource Name : AWS의 모든 리소스의 고유 아이디
 **VPC의 구성요소**
 
 ![youtu.be-FeYagEibtPE](../../images/2022-10-24-AWS-Basic-knowledge/youtu.be-FeYagEibtPE.jpg)
+
+
+
+**클라우드 관련 개념 :**
+
+- 고가용성(High Availability) : 장애 상황을 해결하고 서비스를 지속할 수 있는 능력
+- 장애 내구성(Fault Tolerance) : 장애 상황에도 서비스를 지속할 수 있는 능력
+- 재해 복구(disaster recover) : 장애 상황에서 정상 서비스를 제공할 수 있도록 복구 하는 것
+- 확장성(Scalability) : 쉽고 빠르게 규모를 늘릴 수 있는 능력
+- 탄력성(Elasticity) : 수요에 따라 컴퓨팅 파워/용량을 확장하거나 축소할 수 있는 능력
