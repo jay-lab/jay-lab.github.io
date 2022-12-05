@@ -9,7 +9,6 @@ tag: [VPC, TIL]
 author_profile: false
 sidebar:
     nav: "docs"
-
 ---
 
 
@@ -43,7 +42,7 @@ EC2 → NACL → Route table → Router → Gateway Endpoints → S3
 ![youtu.be-MPaxxOsjOos (1)](../../images/2022-11-20-VPC-Endpoint/youtu.be-MPaxxOsjOos%20(1).jpg)
 
 AWS의 서비스마다 Interface 유형인지, Gateway 유형인지는 정해져있다.
-"S3, DynamoDB만 Gatewat. 나머지는 다 Interface에요"
+"S3, DynamoDB만 Gateway. 나머지는 다 Interface에요"
 
 
 
@@ -71,6 +70,6 @@ AWS의 서비스마다 Interface 유형인지, Gateway 유형인지는 정해져
    2. 프라이빗 서브넷 선택
    3. 여기까지하면 프라이빗 라우팅테이블의 라우링 탭을 보면 한가지가 추가되어있음
       "프라이빗서브넷 영역 안에서 발생된 S3에 대한 요청건은 가로채서 위에서 생성한 엔드포인트로 보낸다"라는 의미.  
-      별도로 설정한 것이 없음에도 이 private 라우트테이블에 표시되는 이유는 b단계에서 프라이빗 서브넷을 연결했다는 점과 기본적으로 프라이빗 서브넷과 연결되어있는 프라이빗 라우트 테이블이라는 점이 더해졌기 때문.
+      별도로 설정한 것이 없음에도 이 private 라우트테이블에 표시되는 이유는 위 단계에서 프라이빗 서브넷을 연결했다는 점과 기본적으로 프라이빗 서브넷과 연결되어있는 프라이빗 라우트 테이블이라는 점이 더해졌기 때문.
    4. 여기까지의 과정을 통해 5-b단계의 명령어를 통해 프라이빗 ec2에서 s3 조회(접근)가 가능해졌다.
 
