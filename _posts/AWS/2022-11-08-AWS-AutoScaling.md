@@ -67,10 +67,20 @@ Launch Template은 EC2가 생성될 때 어떠한 설정으로 생성할지 명�
   #!/bin/bash
   
   yum install httpd -y
-  service httpd start
-  chkconfig httpd on
+  service httpd start > 현재는 systemctl start httpd
+  chkconfig httpd on > 현재는 systemctl enable httpd.service
   aws s3 cp s3://jin-as-test-1106/index.html /var/www/html --region ap-northeast-2
   ```
+
+※ Centos7부터 service 명령어 보다는 systemctl로 제어 권장되며 Amazon Linux 또한 동일하게 권장된다. `service`명령 입력시 `systemctl` 명령을 사용한 리다이렉트 
+
+`chkconfig`도 입력해보면 `systemctl enable httpd.service`로 리다이렉트 되는 것을 확인할 수 있다.
+
+> sudo systemctl start application.service
+>
+> sudo systemctl start application
+>
+> 두 명령어는 동일한 내용. 같은 결과.
 
 
 
