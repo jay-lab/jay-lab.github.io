@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Jay-Lab"
-  avatar           : "/assets/images/jerry.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bear.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "#KOREAN🇰🇷 #INFJ🐝 #DEVELOPER🧙🏻"
   location         : "South Korea"
   email            :
